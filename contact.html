@@ -102,8 +102,7 @@
     <!-- Contact Section -->
     <section class="section" aria-labelledby="contact-form-title">
       <div class="container">
-        <div class="contact-grid">
-          <div class="contact-info fade-in">
+        <div class="contact-info fade-in" style="max-width: 100%;">
             <h2 id="contact-form-title">Let's Connect</h2>
             <p>
               Whether you're a law firm looking for quality cases, an entrepreneur seeking 
@@ -111,8 +110,8 @@
               an interview—I'd love to hear from you.
             </p>
             
-            <div class="contact-methods">
-              <div class="contact-method">
+                        <div class="contact-methods" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
+                          <div class="contact-method" style="flex: 1; min-width: 200px;">
                 <div class="contact-method-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 </div>
@@ -122,25 +121,25 @@
                 </div>
               </div>
               
-              <div class="contact-method">
-                <div class="contact-method-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </div>
-                <div>
-                  <div class="contact-method-label">Location</div>
-                  <div class="contact-method-value">Pennsylvania, United States</div>
-                </div>
-              </div>
+                            <div class="contact-method" style="flex: 1; min-width: 200px;">
+                              <div class="contact-method-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                              </div>
+                              <div>
+                                <div class="contact-method-label">Location</div>
+                                <div class="contact-method-value">Pennsylvania, United States</div>
+                              </div>
+                            </div>
               
-              <div class="contact-method">
-                <div class="contact-method-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                </div>
-                <div>
-                  <div class="contact-method-label">Response Time</div>
-                  <div class="contact-method-value">Within 24-48 hours</div>
-                </div>
-              </div>
+                            <div class="contact-method" style="flex: 1; min-width: 200px;">
+                              <div class="contact-method-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                              </div>
+                              <div>
+                                <div class="contact-method-label">Response Time</div>
+                                <div class="contact-method-value">Within 24-48 hours</div>
+                              </div>
+                            </div>
             </div>
             
             <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--color-text-primary);">Connect on Social</h4>
@@ -159,103 +158,10 @@
               </a>
             </div>
           </div>
-          
-          <div class="contact-form-wrapper fade-in">
-            <form id="contact-form" class="contact-form" action="#" method="POST">
-              <div class="form-success">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.5rem;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                <strong>Message sent successfully!</strong><br>
-                Thank you for reaching out. I'll get back to you within 24-48 hours.
-              </div>
-              
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name">Full Name *</label>
-                  <input type="text" id="name" name="name" placeholder="John Smith" required>
-                </div>
-                
-                <div class="form-group">
-                  <label for="email">Email Address *</label>
-                  <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="Partnership Inquiry / Speaking Request / etc.">
-              </div>
-              
-              <div class="form-group">
-                <label for="inquiry-type">Inquiry Type</label>
-                <select id="inquiry-type" name="inquiry_type" style="padding: var(--space-md); background: var(--color-bg-tertiary); border: 1px solid var(--color-border); border-radius: var(--radius-sm); color: var(--color-text-primary); font-family: var(--font-body); font-size: 1rem;">
-                  <option value="">Select an option...</option>
-                  <option value="legal-lead-gen">Legal Lead Generation (Law Firms)</option>
-                  <option value="partnership">Partnership Opportunity</option>
-                  <option value="investment">Investment Discussion</option>
-                  <option value="media">Media / Press Inquiry</option>
-                  <option value="speaking">Speaking Engagement</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              
-              <div class="form-group">
-                <label for="message">Message *</label>
-                <textarea id="message" name="message" placeholder="Tell me about your inquiry, goals, or how I can help..." required></textarea>
-              </div>
-              
-              
-              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--space-md);">
-                Send Message
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section bg-secondary" aria-labelledby="faq-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">FAQ</span>
-          <h2 id="faq-title" class="section-title">Common Questions</h2>
-        </div>
         
-        <div class="about-values" style="max-width: 900px; margin: 0 auto;">
-          <div class="value-item fade-in">
-            <h4 class="value-title">How does Case Connect work with law firms?</h4>
-            <p class="value-description">We deliver pre-signed personal injury cases directly to attorneys. Our model handles marketing, intake, and case qualification—you receive clients ready to represent.</p>
-          </div>
-          
-          <div class="value-item fade-in">
-            <h4 class="value-title">What areas does Case Connect cover?</h4>
-            <p class="value-description">We serve law firms nationwide, with particular strength in motor vehicle accidents, Lemon Law, and expanding into Social Security Disability cases.</p>
-          </div>
-          
-          <div class="value-item fade-in">
-            <h4 class="value-title">Is Angelo available for speaking engagements?</h4>
-            <p class="value-description">Yes. Topics include legal lead generation, AI implementation, advertising compliance, and scaling service businesses. Use the form above to inquire.</p>
-          </div>
-          
-          <div class="value-item fade-in">
-            <h4 class="value-title">What's the best way to reach Angelo?</h4>
-            <p class="value-description">The contact form on this page is monitored daily. For urgent matters, email directly at angelo@caseconnect.com. Expect a response within 24-48 hours.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Book a Call Section -->
-    <section id="booking" class="booking-section" aria-labelledby="booking-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Schedule</span>
-          <h2 id="booking-title" class="section-title">Book a Call</h2>
-          <p class="section-description">Select a time that works for you to discuss partnerships, opportunities, or any inquiries.</p>
-        </div>
-        <div class="booking-calendar">
-          <iframe src="https://api.leadconnectorhq.com/widget/booking/yCFlhmk5BpKnlYdIGWMc" style="width: 100%; min-height: 700px; border: none; overflow: hidden; border-radius: var(--radius-lg);" scrolling="no" id="yCFlhmk5BpKnlYdIGWMc_1768677460545"></iframe>
+        <!-- Full-width Calendar -->
+        <div class="booking-calendar fade-in" style="margin-top: var(--space-3xl);">
+          <iframe src="https://api.leadconnectorhq.com/widget/booking/yCFlhmk5BpKnlYdIGWMc" style="width: 100%; min-height: 700px; border: none; overflow: hidden; border-radius: var(--radius-lg);" scrolling="no" id="yCFlhmk5BpKnlYdIGWMc_contact"></iframe>
           <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
         </div>
       </div>

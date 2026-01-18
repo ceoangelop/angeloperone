@@ -1029,7 +1029,7 @@ body::after {
    ============================================ */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 2fr;
   gap: var(--space-4xl);
 }
 

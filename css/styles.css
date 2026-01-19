@@ -558,6 +558,10 @@ body::after {
   .stat:last-child {
     border-bottom: none;
   }
+  
+  .hero-image-accent {
+    display: none;
+  }
 }
 
 /* ============================================
